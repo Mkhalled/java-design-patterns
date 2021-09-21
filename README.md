@@ -27,3 +27,11 @@ Singleton pattern is used for logging, drivers objects, caching and thread pool.
 
 >> ** - Abstract Factory ;**  is similar to Factory pattern and it’s a factory of factories.
 In Abstract Factory pattern, we get rid of if-else block and have a factory class for each sub-class and then an Abstract Factory class that will return the sub-class based on the input factory class. 
+
+>> **Builder pattern**
+Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object.
+There are three major issues with Factory and Abstract Factory design patterns when the Object contains a lot of attributes.
+
+>>> 1. Too Many arguments to pass from client program to the Factory class that can be error prone because most of the time, the type of arguments are same and from client side its hard to maintain the order of the argument.
+>>> 2. Some of the parameters might be optional but in Factory pattern, we are forced to send all the parameters and optional parameters need to send as NULL.
+>>> 3. If the object is heavy and its creation is complex, then all that complexity will be part of Factory classes that is confusing.
