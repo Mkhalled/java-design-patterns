@@ -24,3 +24,6 @@ Singleton pattern is used for logging, drivers objects, caching and thread pool.
 - Factory pattern removes the instantiation of actual implementation classes from client code. 
 - Factory pattern makes our code more robust, less coupled and easy to extend. 
 - Factory pattern provides abstraction between implementation and client classes through inheritance.
+
+>> ** - Abstract Factory ;**  is similar to Factory pattern and it’s a factory of factories.
+In Abstract Factory pattern, we get rid of if-else block and have a factory class for each sub-class and then an Abstract Factory class that will return the sub-class based on the input factory class. 
